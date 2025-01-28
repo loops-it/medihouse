@@ -86,8 +86,8 @@
 }
 
 .body-admin-login {
-  background: url("/Users/chathila/Desktop/medihouse/public/images/login-back-img.jpeg")
-    no-repeat center center fixed;
+  /* background: url("/Users/chathila/Desktop/medihouse/public/images/login-back-img.jpeg")
+    no-repeat center center fixed; */
   background-size: cover;
   font-family: "Inter", sans-serif;
 }
