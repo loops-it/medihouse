@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+</head>
+
+<body>
+
+
+    <!-- Header -->
+    <div class="header">
+        <div class="logo">
+            <img src="public/images/Logomedihouse.png" alt="Logo" style="width: 100px; height: auto;">
+        </div>
+
+        <div class="d-flex align-items-center gap-2 gap-md-4">
+            <img src="public/images/userimg.png" alt="User Image"
+                style="width: 50px; height: auto; border-radius: 100%;">
+            <div>
+                <span class="d-block" style="font-weight: 600;">Ethan Carter</span>
+                <small class="text-muted">Admin</small>
+            </div>
+            <button class="btn logout-btn">
+                <img src="public/images/logoutarrow.png" alt="Download Icon"  class="logout-arrow-img" />
+                Log out
+            </button>
+        </div>
+
+    </div>
+    <div class="mt-5">
+        <div class="my-4" style="margin-left: 20px; margin-right: 20px;">
+            <div class="p-4 bg-light rounded">
+                <!-- Patient Details Section -->
+                <h5 class="fw-bold mb-4">Patient Details</h5>
+                <div class="row">
+                    <!-- Patient Name -->
+                    <div class="col-md-6 mb-3">
+                        <label for="patientName" class="form-label label-css-form">Name</label>
+                        <input type="text" class="form-control custom-upload-field" id="patientName" placeholder="Patient Name" />
+                    </div>
+
+                    <!-- Receipt Number -->
+                    <div class="col-md-6 mb-3">
+                        <label for="receiptNumber" class="form-label label-css-form">Passport Number / CDC
+                            Number</label>
+                        <input type="text" class="form-control custom-upload-field" id="receiptNumber"
+                            placeholder="Passport Number / CDC Number" />
+                    </div>
+                </div>
+
+                <!-- Upload Cover Page PDF -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="receiptNumber" class="form-label label-css-form">Serial Number</label>
+                        <input type="text" class="form-control custom-upload-field" id="receiptNumber" placeholder="Serial Number" />
+                    </div>
+                    <!-- <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label fw-bold">Upload Report PDF</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div> -->
+
+
+                </div>
+
+                <!-- Patient Report Details Section -->
+                <h5 class="fw-bold mt-5 mb-4">Patient Report Details</h5>
+                <div class="row">
+                    <!-- Report Type -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Cover Page PDF</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+
+                    <!-- Upload Report PDF -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Page One</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Report Type -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Page Two</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+
+                    <!-- Upload Report PDF -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Page Three</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <!-- Report Type -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Page Four</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+
+                    <!-- Upload Report PDF -->
+                    <div class="col-md-6 mb-3">
+                        <label for="reportPdf" class="form-label label-css-form">Upload Page Five</label>
+                        <div class="custom-input-group">
+                            <label for="reportPdf" class="custom-upload-field">
+                                <span class="placeholder-text">Choose the PDF</span>
+                                <span class="input-icon">
+                                    <img src="public/images/fileicon.png" alt="Folder Icon" />
+                                </span>
+                            </label>
+                            <input type="file" class="d-none" id="reportPdf" />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Submit Button -->
+                <br>
+                <br>
+                <div class="text-end">
+                    <button type="submit" class="btn form-submit-btn">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
