@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Government Dashboard</title>
+    <title>Add New Patient</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="public/css/styles.css">
 </head>
@@ -14,33 +14,39 @@
     <!-- Header -->
     <div class="header">
         <div class="logo">
-            <img src="public/images/Logomedihouse.png" alt="Logo" style="width: 100px; height: auto;">
+            <img src="public/images/Logomedihouse.png" alt="Logo" style="width: 100px; height: auto;"  class="header-logo">
         </div>
 
-        <div class="d-flex align-items-center gap-2 gap-md-4">
-            <img src="public/images/userimg.png" alt="User Image"
-                style="width: 50px; height: auto; border-radius: 100%;">
-            <div>
-                <span class="d-block" style="font-weight: 600;">Ethan Carter</span>
-                <small class="text-muted">Admin</small>
+        <div class="d-flex align-items-center gap-2 gap-md-4 me-md-3">
+            <div class="d-flex align-items-center gap-2 gap-md-2 ">
+                <img src="public/images/userimg.png" alt="User Image"
+                    style="width: 50px; height: auto; border-radius: 100%;">
+                <div style="line-height: 20px;">
+                    <span class="d-block" style="font-weight: 600; font-family: Poppins, sans-serif;">Ethan
+                        Carter</span>
+                    <small class="text-muted" style="font-family: Poppins, sans-serif;">Admin</small>
+                </div>
             </div>
+
             <button class="btn logout-btn">
-                <img src="public/images/logoutarrow.png" alt="Download Icon"  class="logout-arrow-img" />
+                <img src="public/images/logoutarrow.png" alt="Download Icon" class="logout-arrow-img" />
                 Log out
             </button>
         </div>
 
     </div>
+
     <div class="mt-5">
         <div class="my-4" style="margin-left: 20px; margin-right: 20px;">
-            <div class="p-4 bg-light rounded">
+            <div class="p-5 bg-light rounded" style="border-radius: 20px !important;">
                 <!-- Patient Details Section -->
-                <h5 class="fw-bold mb-4">Patient Details</h5>
+                <h5 class="mb-4" style="font-weight: 600; font-family: Poppins, sans-serif;">Patient Details</h5>
                 <div class="row">
                     <!-- Patient Name -->
                     <div class="col-md-6 mb-3">
-                        <label for="patientName" class="form-label label-css-form">Name</label>
-                        <input type="text" class="form-control custom-upload-field" id="patientName" placeholder="Patient Name" />
+                        <label for="patientName" class="form-label label-css-form">Patient Name</label>
+                        <input type="text" class="form-control custom-upload-field" id="patientName"
+                            placeholder="Patient Name" />
                     </div>
 
                     <!-- Receipt Number -->
@@ -56,7 +62,8 @@
                 <div class="row">
                     <div class="col-md-6 mb-3">
                         <label for="receiptNumber" class="form-label label-css-form">Serial Number</label>
-                        <input type="text" class="form-control custom-upload-field" id="receiptNumber" placeholder="Serial Number" />
+                        <input type="text" class="form-control custom-upload-field" id="receiptNumber"
+                            placeholder="Serial Number" />
                     </div>
                     <!-- <div class="col-md-6 mb-3">
                         <label for="reportPdf" class="form-label fw-bold">Upload Report PDF</label>
